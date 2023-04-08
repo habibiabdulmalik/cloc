@@ -47,5 +47,5 @@ function myFunction(){
 myFunction();
 
 money.addEventListener('click', () =>{
-    window.alert("Much For The Person Viewing This")
+    window.alert("Much Love For The Person Viewing This")
 })
