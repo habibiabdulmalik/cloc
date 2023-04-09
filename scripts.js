@@ -1,16 +1,12 @@
 const hours = document.querySelector('.hours');
 const min = document.querySelector('.min');
 const sec = document.querySelector('.sec');
-const btn = document.querySelector('.btn');
+const aler = document.querySelector('.money');
 const input = document.querySelector('.input');
 const text = document.querySelector('.text');
-const  audio = document.querySelector('.audio')
-const money = document.querySelector('.money');
-music = [
-    {
-        song:"Chris-Brown-Under-The-Influence-(JustNaija.com).mp3"
-    }
-]
+const btn = document.querySelector('.btn');
+const container = document.querySelector('.container');
+const home = document.querySelector('.home');
 
 let count = 0;
 
@@ -46,6 +42,26 @@ function myFunction(){
 
 myFunction();
 
-money.addEventListener('click', () =>{
+aler.addEventListener('click', () =>{
     window.alert("Much Love For The Person Viewing This")
+})
+
+btn.addEventListener('click', () => {
+    let name = input.value
+    text.textContent = name;
+
+
+    if(input > 0) {
+    }
+    
+    else{
+        home.style.display = "none" 
+        container.style.display = "block"
+    }
+    
+    if (input.value == 0) {
+        container.style.display = "none"
+        home.style.display = "block" 
+        
+    }
 })

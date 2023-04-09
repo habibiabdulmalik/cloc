@@ -2,17 +2,41 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+.home {
+    text-align: center;
+    background-color: pink;
+    height: 100vh;
+}
+
+.home p {
+    padding-top: 20vh;
+}
+
+.btn{
+    width: 120px;
+    height:30px;
+    background-color: white;
+    color:black;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
 
 .container {
     margin:  5em auto;
     text-align: center;
-    padding: 5em 0;
+    padding: 3.5em 0;
     background-color: black;
     height: 40vh;
     width: 40vh;
     border-radius: 50%;
     color: white;
+    display: none;
 }
 
 h1:nth-child(1) {
